@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Full Width Landing</title>
+        <style></style> 
+        <link href="./style.css" rel="stylesheet">
+    </head> 
+    <!-- landing page a page where you wanna convey your story on the stuff/product -->
+    <!-- if you have multiple style tag -->
+    <!-- ./ means current folder, same directory -->
+    <!-- always need a hyperlink ref and a relationship <rel> to stylesheet -->
+    <body>
+        <div id="app">
+            <div class="container-fluid">
+                <header class="container">
+                    <h1>Logo</h1>
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                    </ul>
+                </header>
+
+                <div class="container-fluid banner">
+                    <div class="container">
+                        <h1> LAND YOUR SERVICES IN STYLE</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra magna ac placerat vestibulum lectus mauris ultrices eros in. Odio tempor orci dapibus ultrices in iaculis. Nam libero justo laoreet sit amet cursus. A pellentesque sit amet porttitor eget dolor morbi. Est pellentesque elit ullamcorper dignissim cras. Commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec.</p>
+                    </div>
+                </div>
+
+                <div class="container-fluid">
+                    <div class="price-holder normal-price">
+                        <p>$999</p>
+                    </div>
+                    <div class="price-holder vip-price">
+                        <p>$1099</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </body>
+</html>
+
+<!-- hierachy for css, (inline, internal, external), code runs from top to bottom, meaning the initial element will be override by any other changes on the bottom-->
+<!-- depending on your position of the style code, it will follow accordingly, the browser renders line by line, so if style tag is placed in the id tag in body, it will follow that style even if another style have been established in the <style> section -->
+    <!-- basically its external (eg. css file) -> internal (html <style>) -> inline (<div style="">) -->
+        <!-- will call external first then only override with internal style -->
