@@ -20,7 +20,7 @@
                 width: 1300px;
                 height: 1840px;
                 background-image: url(images/bg-2.png);
-                background-size: contain;
+                background-size: cover;
                 background-repeat: no-repeat;
                 overflow: hidden;
                 margin: 0 auto;
@@ -58,6 +58,17 @@
                 position: absolute;
                 left: 490px;
                 top: 400px;
+                animation-name: animateImg1;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes animateImg1 {
+                from { 
+                    transform: scale(0) rotate(-60deg);
+                }
+                to {
+                    transform: scale(1) rotate(360deg);
+                }
             }
             #picShoe img {
                 width: 100%;
@@ -90,6 +101,19 @@
                 position: absolute;
                 left: 260px;
                 top: 673px;
+                animation-name: animateImg2;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+                animation-fill-mode: backwards;
+                animation-delay: 3.5s;
+            }
+            @keyframes animateImg2 {
+                from {
+                    transform: scale(0) rotate(360deg);
+                }
+                to {
+                    transform: scale(1) rotate(0deg);
+                }
             }
             #ism {
                 width: 900px;
@@ -115,6 +139,17 @@
                 position: absolute;
                 left: 569px;
                 top: 769px;
+                animation-name: animateImg3;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes animateImg3 {
+                from {
+                    transform: scale(0) rotate(180deg);
+                }
+                to {
+                    transform: scale(1) rotate(360deg);
+                }
             }
             #bottomlineLeft {
                 height: 10px;
